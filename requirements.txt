@@ -1,3 +1,6 @@
 # Browser automation
 playwright>=1.40.0
 
+# AI/LLM support - Anthropic Claude
+anthropic>=0.18.0
+
