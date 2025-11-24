@@ -8,7 +8,8 @@ __version__ = "0.1.0"
 from workflow_vision_agent.browser import BrowserController
 from workflow_vision_agent.parser import TaskParser
 from workflow_vision_agent.elements import ElementFinder
+from workflow_vision_agent.actions import ActionExecutor
 from workflow_vision_agent.ai import LLMClient
 
-__all__ = ["BrowserController", "TaskParser", "ElementFinder", "LLMClient"]
+__all__ = ["BrowserController", "TaskParser", "ElementFinder", "ActionExecutor", "LLMClient"]
 
