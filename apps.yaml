@@ -1,0 +1,51 @@
+# Application configuration
+# Lightweight config with only essential information
+
+apps:
+  linear:
+    base_url: "https://linear.app"
+    auth_required: false
+    # Common patterns (hints only, not hardcoded)
+    create_button_patterns:
+      - "[data-testid*='create']"
+      - "button:has-text('Create')"
+    modal_patterns:
+      - "[role='dialog']"
+      - ".modal"
+  
+  notion:
+    base_url: "https://www.notion.so"
+    auth_required: true
+    create_button_patterns:
+      - "button:has-text('New')"
+      - "[data-testid*='new']"
+    modal_patterns:
+      - "[role='dialog']"
+      - ".notion-overlay"
+  
+  asana:
+    base_url: "https://app.asana.com"
+    auth_required: true
+    create_button_patterns:
+      - "button:has-text('Create')"
+    modal_patterns:
+      - "[role='dialog']"
+  
+  disneyplus:
+    base_url: "https://www.disneyplus.com"
+    auth_required: false
+    create_button_patterns: []
+    modal_patterns:
+      - "[role='dialog']"
+      - ".modal"
+  
+  cnn:
+    base_url: "https://www.cnn.com"
+    auth_required: false
+    create_button_patterns:
+      - "button:has-text('Subscribe')"
+      - "a:has-text('Subscribe')"
+    modal_patterns:
+      - "[role='dialog']"
+      - ".modal"
+
